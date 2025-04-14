@@ -1,0 +1,175 @@
+\chapter{Empirical Model and Results}
+\label{chap:empirical} % Ensure tikz package is loaded
+
+This chapter aims to empirically test the key factors influencing employee \enquote{shirking} behavior and evaluate some of the mechanisms proposed in the theoretical models of Chapters Two and Three using econometric methods. We will utilize (fictional) data from the China Enterprise Employee Survey (CEES) to construct and analyze an econometric model. First, we describe the model specification; second, we introduce the data source and variable measurement; third, we report the baseline regression results; finally, we enhance the credibility of the results through coefficient visualization and discussion.
+
+\section{Model Specification}
+
+Considering that employee \enquote{shirking} behavior may be influenced by many time-invariant individual inherent traits (such as personality, work attitude, innate ability) as well as firm-level fixed characteristics, failing to control for these factors could lead to omitted variable bias. Therefore, this study primarily employs a panel data Fixed Effects Model to control for individual-level time-invariant heterogeneity. Simultaneously, the model incorporates year fixed effects to absorb time-varying common factors such as macroeconomic conditions or widespread technological shocks. The baseline econometric model is specified as follows:
+
+\begin{equation}
+\label{eq:empirical_model}
+\begin{aligned}
+\text{ShirkingIndex}_{it} = & \beta_0 + \beta_1 \text{MonitoringIntensity}_{it} + \\
+                            & \beta_2 \text{PerformancePayShare}_{it} + \\
+                            & \beta_3 \text{TaskComplexity}_{it} + \\
+                            & X'_{it} \omega + \alpha_i + \gamma_t + \varepsilon_{it}
+\end{aligned}
+\end{equation}
+
+\noindent
+Here, the subscript \(i\) denotes the individual employee, and \(t\) denotes the year. \(\text{ShirkingIndex}_{it}\) is the dependent variable, measuring the degree of \enquote{shirking} of employee \(i\) in year \(t\). \(\text{MonitoringIntensity}_{it}\) represents the intensity of monitoring by the firm on the employee. \(\text{PerformancePayShare}_{it}\) indicates the proportion of performance pay in the employee's total income. \(\text{TaskComplexity}_{it}\) measures the complexity and autonomy of the tasks undertaken by the employee. \(X'_{it}\) is a vector of time-varying individual and firm-level control variables, and \(\omega\) is the corresponding coefficient vector. \(\alpha_i\) represents individual fixed effects, controlling for all time-invariant individual characteristics. \(\gamma_t\) represents year fixed effects, controlling for time trends common to all years. \(\varepsilon_{it}\) is the random error term.
+
+The core of this model lies in estimating the coefficients \(\beta_1\), \(\beta_2\), and \(\beta_3\). According to theoretical expectations, \(\beta_1\) is expected to be negative, as higher monitoring intensity should curb \enquote{shirking} behavior. Similarly, \(\beta_2\) is expected to be negative, because a higher proportion of performance pay, linked to effort and output, should reduce \enquote{shirking}. The sign of \(\beta_3\) is uncertain. On one hand, more complex and autonomous jobs might stimulate employees' intrinsic motivation, thereby reducing \enquote{shirking}; on the other hand, complex tasks are often harder to monitor, potentially providing more room for \enquote{shirking}. By estimating this model, we can test whether these theoretical predictions are supported in the (fictional) data.
+
+\section{Data and Variable Description}
+
+\subsection{Data Source}
+
+The data used in this study originates from a fictional large-scale tracking survey designed to simulate the actual situation in China – the \enquote{China Enterprise Employee Survey (CEES)}. This survey (hypothetically) launched its baseline in 2015 and conducted three follow-up surveys in 2017, 2019, and 2021, covering enterprises and their employees across various industries in the eastern, central, and western regions of China. CEES collected detailed information on employees' personal characteristics, job features, compensation structures, work attitudes, and firm-level management practices. This study constructs an unbalanced panel dataset comprising employees successfully interviewed at least twice across all four survey waves. After data cleaning and screening (e.g., removing samples with severe missing values in key variables), the final sample used for analysis includes 15,820 employees, totaling 48,550 employee-year observations.
+
+\subsection{Variable Measurement}
+
+First, we define the dependent variable, {Shirking Index (\(\text{ShirkingIndex}_{it}\))}, which aims to quantify the extent of employee \enquote{shirking}. In the CEES survey (hypothetically), we construct this index using a series of questions. For example, asking employees about the frequency of engaging in non-work-related activities during work hours (such as browsing social media, online shopping, handling personal affairs), their self-perceived effort level (relative to colleagues or their own maximum potential), and whether they engage in behaviors like intentional procrastination. Through factor analysis or simple weighted averaging, this information is synthesized into a composite index ranging from 0 to 10, where higher values indicate a greater degree of \enquote{shirking}.
+
+Next are the core explanatory variables. The first is {Monitoring Intensity (\(\text{MonitoringIntensity}_{it}\))}, constructed based on questions in the CEES firm questionnaire regarding management practices. Examples include the frequency of direct observation of employee work processes by management, the use of electronic monitoring systems (like computer activity monitoring, workstation cameras), and the strictness of requirements for work logs or reports. This information is standardized and combined into an index ranging from 0 to 1, with higher values indicating greater monitoring intensity. The second is {Performance Pay Share (\(\text{PerformancePayShare}_{it}\))}, calculated from employee questionnaire responses about their income composition (fixed salary, bonuses based on individual performance, bonuses based on team or company performance, etc.). It is defined as the proportion of performance-related income (bonuses, commissions, etc.) in their total annual pre-tax income, with a value range of [0, 1]. The third is {Task Complexity (\(\text{TaskComplexity}_{it}\))}, constructed based on employee evaluations of their job tasks. Relevant questions might include the degree of repetitiveness of the work, the creativity required to solve problems, the extent of job autonomy, and skill variety requirements. This is also synthesized into an index ranging from 1 to 5, with higher values indicating more complex and autonomous tasks.
+
+Finally, there are the control variables (\(X'_{it}\)). To more accurately identify the impact of the core explanatory variables, the model includes the following time-varying control variables: {Log Wage (\(\text{LogWage}_{it}\))}, the natural logarithm of the employee's total annual pre-tax income, as wage levels might directly affect job satisfaction and willingness to exert effort; {Tenure (\(\text{Tenure}_{it}\))}, the employee's years of service in the current company, potentially related to organizational commitment, job familiarity, etc.; {Age (\(\text{Age}_{it}\))} and {Age Squared (\(\text{Age}^2_{it}\))}, to control for the non-linear effect of age on work attitudes; {Years of Education (\(\text{Education}_{it}\))}, the total number of years the employee received formal education; {Gender (\(\text{Gender}_{i}\))}, a dummy variable (1 for male, 0 for female), although time-invariant variables like gender cannot be estimated themselves due to the use of individual fixed effects, their interaction effects with other time-varying variables might still exist; {Firm Size (\(\text{FirmSize}_{it}\))}, the logarithm of the total number of employees in the firm, as firm size may influence organizational structure, management style, and monitoring difficulty; and a series of {Industry Dummies (\(\text{IndustryDummies}_{i}\))} (also affected by individual fixed effects). Additionally, individual fixed effects (\(\alpha_i\)) control for time-invariant individual-level factors (such as ability, personality), and year fixed effects (\(\gamma_t\)) control for time-varying macroeconomic factors.
+
+\section{Baseline Regression Results}\label{sec:empirical_baseline_results}
+
+Table \ref{tab:fe_results} presents the estimation results of the fixed effects model based on equation (\ref{eq:empirical_model}). Model (1) includes only the core explanatory variables, Model (2) adds individual-level control variables (log wage, tenure, age, etc.), and Model (3) further incorporates firm-level control variables (firm size) along with all fixed effects. All models report robust standard errors clustered at the individual level.
+
+{\small
+\begin{longtable}{p{5cm} p{2.2cm} p{2.2cm} p{2.2cm}}
+\caption{Fixed Effects Model Regression Results: Factors Affecting Shirking Index} \label{tab:fe_results} \\
+\toprule
+& \multicolumn{3}{c}{Shirking Index} \\
+\cmidrule(lr){2-4}
+Variable & (1) & (2) & (3) \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{c}%
+{{Continued \tablename\ \thetable{}\quad Fixed Effects Model Regression Results: Factors Affecting Shirking Index}} \\
+\toprule
+& \multicolumn{3}{c}{Shirking Index} \\
+\cmidrule(lr){2-4}
+Variable & (1) & (2) & (3) \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{4}{r@{}}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\multicolumn{4}{@{}l}{\footnotesize Note: *, **, *** indicate significance at 10\%, 5\%, 1\% levels.} \\
+\multicolumn{4}{@{}l}{\footnotesize All models include individual and year fixed effects. Model (3) is the full model.} \\
+\endlastfoot
+
+{Core Explanatory Variables:} & & & \\
+\quad Monitoring Intensity & -1.523*** & -1.285*** & -1.150*** \\
+& (0.188) & (0.201) & (0.205) \\
+\quad Performance Pay Share & -2.105*** & -1.850*** & -1.782*** \\
+& (0.255) & (0.260) & (0.263) \\
+\quad Task Complexity & 0.312** & 0.258* & 0.280** \\
+& (0.124) & (0.130) & (0.133) \\
+\\
+{Control Variables:} & & & \\
+\quad Log Wage & & 0.085 & 0.070 \\
+& & (0.060) & (0.061) \\
+\quad Tenure & & -0.021** & -0.018* \\
+& & (0.009) & (0.010) \\
+\quad Tenure Squared & & 0.0003 & 0.0002 \\
+& & (0.0002) & (0.0002) \\
+\quad Age & & -0.035 & -0.030 \\
+& & (0.025) & (0.026) \\
+\quad Age Squared / 100 & & 0.040 & 0.038 \\
+& & (0.030) & (0.031) \\
+\quad Years of Education & & -0.050 & -0.045 \\
+& & (0.038) & (0.039) \\
+\quad Log Firm Size & & & -0.120* \\
+& & & (0.070) \\
+\quad Constant & 4.850*** & 5.210*** & 5.530*** \\
+& (0.310) & (0.450) & (0.480) \\
+\midrule
+Individual Fixed Effects & Yes & Yes & Yes \\
+Year Fixed Effects & Yes & Yes & Yes \\
+\midrule
+Observations & 48550 & 48550 & 48550 \\
+R$^2$ within & 0.085 & 0.102 & 0.105 \\
+R$^2$ between & 0.150 & 0.180 & 0.183 \\
+R$^2$ overall & 0.120 & 0.145 & 0.148 \\
+F statistic & 85.3*** & 65.2*** & 62.5*** \\
+Number of Employees & 15820 & 15820 & 15820 \\
+
+\end{longtable}
+}
+
+Looking at the results from the full model (Column 3), the coefficient for {Monitoring Intensity (\(\text{MonitoringIntensity}\))} is significantly negative (-1.150, p<0.001), consistent with theoretical expectations. The result indicates that, after controlling for other factors, an increase in firm monitoring intensity significantly reduces the employee's \enquote{shirking} index. Specifically, a one-unit increase in the monitoring intensity index (from 0 to 1) is associated with an average decrease of about 1.15 points in the shirking index. The coefficient for {Performance Pay Share (\(\text{PerformancePayShare}\))} is also significantly negative (-1.782, p<0.001), aligning with theoretical predictions as well. An increase in the proportion of performance-based compensation in total income more closely links the employee's interests with work outcomes, thereby effectively reducing \enquote{shirking} behavior. For every 10 percentage point increase in the share, the shirking index decreases by about 0.18 points on average. Unlike the first two, the coefficient for {Task Complexity (\(\text{TaskComplexity}\))} is significantly positive (0.280, p<0.05). This suggests that, after controlling for other factors, an increase in task complexity (and autonomy) is associated with a higher \enquote{shirking} index. This might reflect that complex tasks are harder to monitor accurately, providing employees with more opportunities for \enquote{loafing on the job}, and this negative effect outweighs the potential positive effect from intrinsic motivation.
+
+Regarding control variables, tenure seems to be associated with lower levels of \enquote{shirking}, and larger firm size also tends to reduce the \enquote{shirking} index (perhaps because larger firms have more formalized management). Variables like log wage, age, and education are not significant in this model, possibly because individual fixed effects have absorbed most of their explanatory power, or their impact on \enquote{shirking} behavior is indeed insignificant.
+
+Overall, the baseline regression results provide (fictional) empirical support for the hypotheses in the theoretical model regarding the effectiveness of monitoring and incentives (performance pay) in constraining \enquote{shirking} behavior. At the same time, the positive impact of task complexity on \enquote{shirking} reveals a trade-off that needs attention in management practice.
+
+\section{Robustness Checks and Discussion}\label{sec:empirical_robustness}
+
+To visually present the impact of the core explanatory variables more intuitively and to discuss the robustness of the results, we plot the coefficients of the core explanatory variables from the baseline model (Table \ref{tab:fe_results}, Column 3) and their 95\% confidence intervals (see Figure \ref{fig:coeff_plot}).
+
+\begin{figure}[htp]
+    \centering
+    \begin{tikzpicture}[scale=2.5, every node/.style={scale=1.6}]
+        % Define coordinate axes
+        \coordinate (origin) at (0,0);
+        \draw [->, >=Latex] (-3,0) -- (3,0) node [below left, font=\tiny] {Coefficient Estimate}; % X axis
+        \draw [->, >=Latex] (0,-0.5) -- (0,3.5) node [below left, font=\tiny] {}; % Y axis (for labels)
+        \draw [dashed, thin, gray] (0,0) -- (0,3); % Zero line
+
+        % Define variable positions and labels
+        \node[left=1cm of origin, yshift=2.5cm, anchor=east, font=\scriptsize] (label1) {Monitoring Intensity};
+        \node[left=1cm of origin, yshift=1.5cm, anchor=east, font=\scriptsize] (label2) {Performance Pay Share};
+        \node[left=1cm of origin, yshift=0.5cm, anchor=east, font=\scriptsize] (label3) {Task Complexity};
+
+        % Draw point estimates and confidence intervals
+        % Monitoring Intensity: est = -1.150, se = 0.205, ci = [-1.552, -0.748] (approx 1.96*se)
+        \coordinate (est1) at (-1.150, 2.5cm);
+        \draw [thick, blue] (est1) circle (1.5pt);
+        \draw [blue] ($(est1)-(1.96*0.205, 0)$) -- ($(est1)+(1.96*0.205, 0)$);
+        \draw [blue] ($(est1)-(1.96*0.205, 0)$) + (0, -0.1) -- +(0, 0.2);
+        \draw [blue] ($(est1)+(1.96*0.205, 0)$) + (0, -0.1) -- +(0, 0.2);
+
+        % Performance Pay Share: est = -1.782, se = 0.263, ci = [-2.297, -1.267] (approx 1.96*se)
+        \coordinate (est2) at (-1.782, 1.5cm);
+        \draw [thick, blue] (est2) circle (1.5pt);
+        \draw [blue] ($(est2)-(1.96*0.263, 0)$) -- ($(est2)+(1.96*0.263, 0)$);
+        \draw [blue] ($(est2)-(1.96*0.263, 0)$) + (0, -0.1) -- +(0, 0.2);
+        \draw [blue] ($(est2)+(1.96*0.263, 0)$) + (0, -0.1) -- +(0, 0.2);
+
+        % Task Complexity: est = 0.280, se = 0.133, ci = [0.019, 0.541] (approx 1.96*se)
+        \coordinate (est3) at (0.280, 0.5cm);
+        \draw [thick, red] (est3) circle (1.5pt); % Use red for positive effect
+        \draw [red] ($(est3)-(1.96*0.133, 0)$) -- ($(est3)+(1.96*0.133, 0)$);
+        \draw [red] ($(est3)-(1.96*0.133, 0)$) + (0, -0.1) -- +(0, 0.2);
+        \draw [red] ($(est3)+(1.96*0.133, 0)$) + (0, -0.1) -- +(0, 0.2);
+
+        % Add X axis ticks
+        \foreach \x in {-2,-1.5,-1,-0.5,0,0.5,1,1.5,2} {
+            \draw (\x, -0.1) -- (\x, 0.1) node[below, font=\tiny] {\x};
+        }
+
+    \end{tikzpicture}
+    \caption{Coefficient Estimates and 95\% Confidence Intervals for Core Explanatory Variables}
+    \label{fig:coeff_plot}
+\end{figure}
+
+Figure \ref{fig:coeff_plot} clearly shows that the confidence intervals for monitoring intensity and performance pay share are entirely to the left of zero, indicating their negative impacts are statistically robust. The confidence interval for task complexity, however, lies to the right of zero but is close to it, showing that its positive impact, while significant (at the 5\% level), is relatively smaller in magnitude compared to the other two, and its robustness might be slightly weaker.
+
+Furthermore, we conducted (or claim to have conducted) several additional robustness checks (results not fully shown in the table). First, we {replaced the dependent variable}, using other proxy measures for \enquote{shirking}, such as self-reported \enquote{work effort level} (reverse coded) or (hypothetically available) time spent visiting non-work-related websites during work hours (Cyberloafing Hours). The signs and significance of the core explanatory variables remained largely unchanged. Second, we performed {subsample analysis}, splitting the sample by industry (e.g., manufacturing vs. service) or firm ownership (state-owned vs. non-state-owned). The results showed that the negative effects of monitoring intensity and performance pay share were generally present across different subsamples, although the magnitude of the effects might vary. For instance, the effect of monitoring might be stronger in manufacturing where tasks are more standardized; the incentive effect of performance pay might be more pronounced in non-state-owned enterprises with higher market orientation. The positive effect of task complexity might be more evident in service industries or knowledge-intensive jobs. Finally, we {considered endogeneity issues}. Although the fixed effects model mitigates some omitted variable problems, time-varying omitted variables or reverse causality (e.g., employees who shirk more might be placed in positions with lower performance pay shares) could still exist. We attempted preliminary exploration using (fictional) instrumental variables (such as the firm-level decision to introduce new monitoring technology as an IV for monitoring intensity). The results (hypothetically) supported the conclusions of the baseline regression, but the validity of the instrumental variables would require more rigorous justification.
+
+{Discussion and Implications}:
+The empirical analysis in this chapter (albeit based on fictional data) provides some empirical evidence for understanding the factors influencing employee \enquote{shirking} behavior. The results emphasize the importance of external incentive and monitoring mechanisms in constraining opportunistic behavior, consistent with the core tenets of principal-agent theory. Firms can effectively reduce employee \enquote{shirking} levels by strengthening monitoring (increasing the perceived probability of detection or penalty) and optimizing compensation structures (increasing the link to performance).
+
+However, the positive effect of task complexity suggests that managers need to pay attention to the alignment between the intrinsic nature of work and management approaches. For tasks requiring high complexity and creativity, over-reliance on traditional monitoring might have limited effectiveness or even be counterproductive (potentially undermining intrinsic motivation, although this study did not directly measure it). In such cases, exploring incentive and management approaches that focus more on results, trust, and empowerment may be necessary.
+
+Of course, this study also has limitations. First, the measurement of \enquote{shirking} relies on (fictional) survey data, which may be subject to social desirability bias or subjectivity. Second, endogeneity issues are difficult to completely rule out. Future research could attempt to use more objective data (such as work logs, digital footprints) or more reliable quasi-natural experimental designs to further validate these findings.

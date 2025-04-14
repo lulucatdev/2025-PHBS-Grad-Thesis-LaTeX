@@ -1,0 +1,41 @@
+\contentsline {chapter}{摘要}{I}{chapter*.1}%
+\contentsline {chapter}{目录}{II}{chapter*.1}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}引论}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}研究背景}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}研究问题}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}研究贡献}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}论文结构安排}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}文献综述}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}委托代理理论与信息不对称}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}激励理论与契约设计}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}博弈论视角下的雇佣关系}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}组织行为学与心理学观点}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}文献述评与本研究定位}{7}{section.2.5}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}理论模型构建}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}模型基本设定}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}雇员的努力与成本}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}产出与支付}{10}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}雇员行为分析：固定工资与监督}{10}{section.3.2}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}模型分析}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}雇员最优努力决策分析}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}雇主的契约设计问题}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}最优契约分析：固定工资与监督}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}参数变化对最优契约的影响（比较静态分析）}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}模型局限与讨论}{17}{section.4.5}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}实证模型与结果}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}模型设定}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}数据与变量说明}{20}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}数据来源}{20}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}变量测量}{20}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}基准回归结果}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}结果稳健性与讨论}{23}{section.5.4}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}总结与展望}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}研究结论总结}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.2}理论意义}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.3}实践启示}{26}{section.6.3}%
+\contentsline {section}{\numberline {6.4}研究局限性}{26}{section.6.4}%
+\contentsline {section}{\numberline {6.5}未来研究方向}{27}{section.6.5}%
+\contentsline {chapter}{参考文献}{29}{appendix*.4}%
+\contentsline {chapter}{致谢}{31}{appendix*.5}%
+\contentsline {chapter}{北京大学学位论文原创性声明和使用授权说明}{33}{appendix*.6}%
+\contentsfinish 

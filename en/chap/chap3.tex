@@ -1,0 +1,95 @@
+\chapter{Theoretical Model Construction}
+\label{chap:model}
+
+This chapter aims to construct a theoretical model to depict the \enquote{shirking} behavior (i.e., choosing the effort level) of employees under asymmetric information and the optimal response strategy of the employer. The model will draw upon the basic frameworks of principal-agent theory and game theory.
+
+\section{Basic Model Setup}
+\label{sec:model_setup}
+
+Consider a single-period employment relationship involving a risk-neutral employer (Principal, P) and a similarly risk-neutral employee (Agent, A). The employee has a reservation utility $\bar{U}$, representing the minimum utility level required to accept the employment relationship. For simplicity, we normalize this to $\bar{U} = 0$.
+
+The sequence of events is as follows:
+\begin{enumerate}
+    \item The employer designs and offers an employment contract to the employee.
+    \item The employee decides whether to accept the contract. If rejected, the employee receives the reservation utility $\bar{U}=0$, and the employer gets zero profit. If accepted, the game proceeds.
+    \item The employee chooses their effort level $e$. Effort level $e \ge 0$. Exerting effort incurs a corresponding cost for the employee.
+    \item Output $q$ is realized, and payments are executed according to the contract.
+\end{enumerate}
+
+The core assumption is information asymmetry: the employer cannot directly observe the effort level $e$ chosen by the employee. However, the employer might indirectly infer or influence the employee's effort choice through monitoring mechanisms or by observing the final output $q$.
+
+\subsection{Employee Effort and Cost}
+
+The employee chooses an effort level $e$. We assume effort is a continuous variable, $e \in [0, \infty)$. Exerting effort generates disutility (cost) for the employee. We represent this with a cost function $c(e)$ and assume it has the following properties:
+\begin{itemize}
+    \item $c(0) = 0$: No effort incurs no cost.
+    \item $c'(e) > 0$ for $e > 0$: The cost of effort increases with the effort level (positive marginal cost).
+    \item $c''(e) > 0$: The marginal cost of effort is increasing (the cost function is strictly convex).
+\end{itemize}
+A commonly used form for the cost function is $c(e) = \frac{k}{2}e^2$, where $k > 0$ is a cost parameter reflecting the difficulty of exerting effort.
+
+The degree of employee \enquote{shirking} can be viewed as the deviation of the chosen effort level $e$ from some benchmark (e.g., the level expected by the employer or the maximum possible level). In this model, we directly analyze the employee's choice of optimal effort $e$.
+
+\subsection{Output and Payment}
+
+To simplify the model, let's first consider a deterministic output scenario, where output $q$ is entirely determined by the employee's effort level:
+\begin{equation}
+q = e
+\end{equation}
+This implies the employer can perfectly infer effort $e$ by observing output $q$. In this case, no information asymmetry exists, and the employer can achieve the optimum by designing a contract that mandates a specific effort level $e^*$ and pays a corresponding wage. For example, specifying payment $w$ if $q=e^*$ and zero or a penalty otherwise. As long as $w - c(e^*) \ge 0$, the employee will accept and choose $e=e^*$.
+
+However, in reality, output is often affected by random factors. A more realistic setup involves stochastic output, for example:
+\begin{equation}
+q = e + \epsilon
+\end{equation}
+where $\epsilon$ is a random noise term with a mean of zero (e.g., following a Normal distribution $N(0, \sigma^2)$). In this scenario, even after observing output $q$, the employer cannot fully determine the employee's effort $e$, highlighting the problem of information asymmetry.
+
+Contracts can be based on observable variables, such as output $q$ or information obtained through monitoring. Common contract forms include:
+\begin{itemize}
+    \item Fixed Wage Contract: Pays a fixed wage $w$ regardless of output.
+    \item Linear Performance Pay Contract: Wage $w = s + bq$, where $s$ is the fixed part, and $b$ is the commission rate (bonus rate) based on output.
+    \item Monitoring-Based Contract: The employer monitors the employee with a certain probability $p$. If monitoring reveals that the employee's behavior does not meet requirements (e.g., effort is below a standard $e^*$), a penalty is imposed.
+\end{itemize}
+
+\section{Analysis of Employee Behavior: Fixed Wage and Monitoring}
+\label{sec:agent_behavior_monitor}
+
+We now analyze how an employee chooses their optimal effort level under a relatively simple contract structure. Consider an employer offering a contract that includes a fixed wage $w$ and a monitoring-penalty mechanism.
+
+Specifically, the employer monitors the employee with probability $p \in [0, 1]$. Monitoring is assumed to be perfect; if implemented, it accurately observes the employee's actual effort level $e$. The contract specifies a minimum effort standard $e_{min} \ge 0$. If the employee is monitored and their effort level $e < e_{min}$, the employee incurs a penalty $F > 0$ (e.g., a fine, wage deduction). If $e \ge e_{min}$, or if the employee is not monitored (with probability $1-p$), no penalty is incurred.
+
+Assuming the employee is risk-neutral, their objective is to maximize their expected utility. The employee's utility comes from the wage received, minus the cost of effort, minus the potential expected penalty. Given the contract $(w, p, e_{min}, F)$, the employee chooses effort $e$ to maximize:
+\begin{equation}
+E[U(e)] = w - c(e) - p \cdot \mathbb{I}(e < e_{min}) \cdot F
+\end{equation}
+where $\mathbb{I}(\cdot)$ is the indicator function, which equals 1 if the condition is true, and 0 otherwise.
+
+The employee's optimal decision is as follows:
+\begin{enumerate}
+    \item {If choosing $e \ge e_{min}$}: In this case, $\mathbb{I}(e < e_{min}) = 0$, and the employee faces no penalty. Their utility is $U_1(e) = w - c(e)$. To maximize utility, the employee will choose the effort level that satisfies $e \ge e_{min}$ with the minimum cost, which is $e = e_{min}$. The utility in this case is $U_1^* = w - c(e_{min})$.
+
+    \item {If choosing $e < e_{min}$}: In this case, $\mathbb{I}(e < e_{min}) = 1$, and the employee faces the risk of being caught and penalized. Their expected utility is $E[U_2(e)] = w - c(e) - pF$. To maximize this expected utility, the employee will choose the lowest possible effort cost, which is $e=0$ (assuming $e=0$ is the minimum allowable effort). The expected utility in this case is $E[U_2^*] = w - c(0) - pF = w - pF$.
+\end{enumerate}
+
+The employee will choose the option that yields higher (expected) utility:
+The employee will choose $e = e_{min}$ if and only if
+\begin{equation}
+U_1^* \ge E[U_2^*]
+\end{equation}
+\begin{equation}
+w - c(e_{min}) \ge w - pF
+\end{equation}
+\begin{equation}
+pF \ge c(e_{min})
+\end{equation}
+
+{Conclusion}: Under this contract, the employee's optimal effort choice $e^*$ is:
+\begin{equation}
+e^* = \begin{cases} e_{min} & \text{if } pF \ge c(e_{min}) \\ 0 & \text{if } pF < c(e_{min}) \end{cases}
+\end{equation}
+
+This result intuitively shows that the employee is incentivized to meet the minimum standard $e_{min}$ only when the expected penalty (probability of detection $p$ times the penalty magnitude $F$) is large enough to exceed the cost of meeting that standard, $c(e_{min})$. Otherwise, the employee prefers to exert no effort ($e=0$) and bear the expected penalty cost $pF$, because doing so saves the effort cost $c(e_{min})$.
+
+This simple model reveals the role of monitoring and penalties in curbing \enquote{shirking} behavior but also highlights its limitations: it can only incentivize the employee to meet the minimum standard $e_{min}$, not higher levels of effort. Furthermore, the effort choice exhibits an \enquote{all-or-nothing} characteristic (relative to $e_{min}$).
+
+% Next section will analyze how the employer designs the optimal contract

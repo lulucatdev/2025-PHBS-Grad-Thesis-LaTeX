@@ -1,0 +1,153 @@
+\chapter{模型分析}
+\label{chap:analysis}
+
+基于第三章构建的理论模型，本章将深入分析雇员的最优努力决策及其影响因素，并探讨雇主在信息不对称背景下如何设计最优的契约（特别是监督强度和最低努力标准）来最大化自身利润。
+
+\section{雇员最优努力决策分析}
+\label{sec:agent_decision_analysis}
+
+回顾第三章 \ref{sec:agent_behavior_monitor} 的分析结果，在固定工资 $w$、监督概率 $p$、最低努力标准 $e_{min}$ 和惩罚 $F$ 的契约下，风险中性的雇员会比较选择 $e=e_{min}$ 的效用 $U_1^* = w - c(e_{min})$ 与选择 $e=0$ 的期望效用 $E[U_2^*] = w - pF$。
+
+最终的决策规则是（如公式 \ref{eq:agent_choice_recap} 所示）：
+\begin{equation} \label{eq:agent_choice_recap}
+e^* = \begin{cases} e_{min} & \text{if } pF \ge c(e_{min}) \\ 0 & \text{if } pF < c(e_{min}) \end{cases}
+\end{equation}
+
+这个结果揭示了几个关键点：
+\begin{enumerate}
+    \item \textbf{监督与惩罚的门槛效应}：雇员是否选择达到最低努力标准 $e_{min}$，完全取决于预期的惩罚 $pF$ 是否足以覆盖达到该标准所需的努力成本 $c(e_{min})$。这是一个明显的门槛效应（threshold effect）。只有当监督概率 $p$ 和惩罚力度 $F$ 的乘积跨过 $c(e_{min})$ 这个门槛时，雇员的行为才会从完全不努力（$e=0$，最大化\zhquote{摸鱼}）跳跃到恰好满足最低要求的努力（$e=e_{min}$）。
+    \item \textbf{无法激励超额努力}：该机制只能激励雇员达到最低标准 $e_{min}$，而无法激励其付出超过 $e_{min}$ 的努力。因为一旦达到 $e_{min}$，进一步增加努力只会增加成本 $c(e)$，而不会带来额外的收益或减少惩罚风险。这体现了单纯依赖\zhquote{底线监督}型契约在激励方面的局限性。
+    \item \textbf{\zhquote{最优摸鱼}策略的二元性}：在此简单模型中，雇员的\zhquote{摸鱼}策略呈现出一种相对极端的二元选择：要么完全不努力（$e=0$），要么恰好达到最低标准（$e=e_{min}$）。不存在一个介于两者之间的\zhquote{部分摸鱼}的均衡状态。这主要是由于模型假设监督能完美识别是否低于 $e_{min}$，且惩罚是固定的。
+\end{enumerate}
+
+这一分析突显了 $p$, $F$, $e_{min}$ 以及成本函数 $c(\cdot)$ 在决定雇员努力行为中的核心作用。接下来，我们将从雇主的角度出发，分析其如何选择这些契约参数。
+
+\section{雇主的契约设计问题}
+\label{sec:principal_problem}
+
+现在我们考虑雇主（P）的决策问题。雇主的目标是最大化其期望利润 $E[\pi]$。假设雇主是风险中性的。其利润等于产出减去支付给雇员的工资，再减去实施监督的成本。
+
+我们采用第三章 (\ref{sec:model_setup}) 提出的确定性产出假设 $q=e$ 来简化分析雇主问题的第一步。后续可以扩展到随机产出情形。
+假设监督成本与监督概率 $p$ 相关，我们设监督成本为 $M(p)$。为简化分析，假设 $M(p) = \gamma p$，其中 $\gamma > 0$ 是单位监督概率的成本系数。
+
+雇主需要选择契约参数 $(w, p, e_{min}, F)$。然而，惩罚力度 $F$ 往往受到法律法规、员工赔付能力或企业声誉等外部因素的限制。因此，我们假设存在一个最大的可行惩罚 $F_{max}$，即 $0 \le F \le F_{max}$。为了最大化惩罚的威慑效果，理性的雇主通常会选择尽可能大的惩罚，即设定 $F = F_{max}$。因此，雇主的决策变量简化为 $(w, p, e_{min})$。
+
+雇主的优化问题是：
+\begin{equation}
+\max_{w, p, e_{min}} \quad E[\pi] = e^* - w - \gamma p
+\end{equation}
+subject to:
+\begin{enumerate}
+    \item 激励相容约束 (Incentive Compatibility, IC): 雇员会根据公式 \ref{eq:agent_choice_recap} 选择最优努力 $e^*$。
+    \begin{equation} \label{eq:ic_constraint}
+    e^* = \begin{cases} e_{min} & \text{if } p F_{max} \ge c(e_{min}) \\ 0 & \text{if } p F_{max} < c(e_{min}) \end{cases}
+    \end{equation}
+    \item 参与约束 (Participation Constraint, PC): 雇员接受契约获得的期望效用必须不低于其保留效用 $\bar{U}=0$。
+    \begin{equation} \label{eq:pc_constraint}
+    E[U(e^*)] = w - c(e^*) - p \cdot \mathbb{I}(e^* < e_{min}) \cdot F_{max} \ge 0
+    \end{equation}
+\end{enumerate}
+其中 $0 \le p \le 1$ 且 $e_{min} \ge 0$。
+
+\section{最优契约分析：固定工资与监督}
+\label{sec:optimal_contract_monitor}
+
+雇主在决策时，实质上面临两种选择：要么设计一个契约来激励雇员选择 $e^*=e_{min}$（诱导努力策略），要么接受雇员选择 $e^*=0$（放任摸鱼策略）。
+
+\textbf{策略一：诱导努力 $e^* = e_{min}$}
+
+要使雇员选择 $e^* = e_{min}$，必须满足 IC 条件 $p F_{max} \ge c(e_{min})$。为了最小化监督成本 $\gamma p$，雇主会选择满足该条件的最低监督概率 $p$。即：
+\begin{equation} \label{eq:optimal_p}
+p^* = \frac{c(e_{min})}{F_{max}}
+\end{equation}
+这里隐含了假设 $c(e_{min}) \le F_{max}$，否则即使 $p=1$ 也无法满足条件。如果 $c(e_{min}) > F_{max}$，则无法通过此机制诱导 $e_{min}$ 的努力。我们假设 $F_{max}$ 足够大，使得 $p^* \le 1$ 可行。
+
+在该情况下，雇员的努力为 $e^*=e_{min}$，其期望效用为 $E[U(e_{min})] = w - c(e_{min}) - p^* \cdot \mathbb{I}(e_{min} < e_{min}) \cdot F_{max} = w - c(e_{min})$。
+为了满足 PC 约束 $w - c(e_{min}) \ge 0$，同时最小化工资成本，雇主会设定最低的可行工资：
+\begin{equation} \label{eq:optimal_w_emin}
+w^* = c(e_{min})
+\end{equation}
+
+此时，雇主的利润为：
+\begin{equation} \label{eq:profit_emin}
+\pi_1(e_{min}) = e_{min} - w^* - \gamma p^* = e_{min} - c(e_{min}) - \gamma \frac{c(e_{min})}{F_{max}}
+\end{equation}
+雇主还需要选择最优的 $e_{min}$ 来最大化 $\pi_1(e_{min})$。假设努力成本函数为 $c(e) = \frac{k}{2}e^2$ ($k>0$)，则
+\begin{equation}
+\pi_1(e_{min}) = e_{min} - \frac{k}{2}e_{min}^2 - \gamma \frac{k e_{min}^2}{2 F_{max}} = e_{min} - \frac{k}{2} \left( 1 + \frac{\gamma}{F_{max}} \right) e_{min}^2
+\end{equation}
+对 $e_{min}$ 求一阶导数并令其为0：
+\begin{equation}
+\frac{d\pi_1}{de_{min}} = 1 - k \left( 1 + \frac{\gamma}{F_{max}} \right) e_{min} = 0
+\end{equation}
+解得最优的最低努力要求 $e_{min}^*$：
+\begin{equation} \label{eq:optimal_emin}
+e_{min}^* = \frac{1}{k \left( 1 + \frac{\gamma}{F_{max}} \right)}
+\end{equation}
+二阶导数为 $-k(1 + \gamma/F_{max}) < 0$，确实是最大值点。
+将 $e_{min}^*$ 代入，可得此时的最优监督概率 $p^{**} = \frac{c(e_{min}^*)}{F_{max}} = \frac{k (e_{min}^*)^2}{2 F_{max}}$ 和最优工资 $w^{**} = c(e_{min}^*) = \frac{k}{2}(e_{min}^*)^2$。
+
+\textbf{策略二：放任摸鱼 $e^* = 0$}
+
+如果雇主设计的契约参数使得 $p F_{max} < c(e_{min})$，或者干脆设定 $p=0$ 且 $e_{min}>0$ (或 $e_{min}=0$)，则雇员会选择 $e^*=0$。
+此时，雇员的努力为 $e^*=0$，其期望效用为 $E[U(0)] = w - c(0) - p \cdot \mathbb{I}(0 < e_{min}) \cdot F_{max} = w - p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max}$。
+为了满足 PC 约束 $w - p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max} \ge 0$，雇主会设定最低工资 $w^* = p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max}$。
+雇主的利润为 $E[\pi_0] = e^* - w^* - \gamma p = 0 - p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max} - \gamma p$。
+显然，要最大化这个利润（即最小化损失），雇主最优的选择是令 $p=0$。此时，雇员选择 $e^*=0$，工资 $w^*=0$，利润 $\pi_0 = 0$。
+
+\textbf{雇主的最终决策}
+
+雇主会比较实施策略一（诱导努力 $e_{min}^*$）能获得的最大利润 $\pi_1(e_{min}^*)$ 和实施策略二（放任摸鱼 $e=0$）获得的利润 $\pi_0 = 0$。
+只有当 $\pi_1(e_{min}^*) > 0$ 时，雇主才会选择诱导努力的策略。即：
+\begin{equation}
+\pi_1(e_{min}^*) = e_{min}^* - \frac{k}{2} \left( 1 + \frac{\gamma}{F_{max}} \right) (e_{min}^*)^2 > 0
+\end{equation}
+将 $e_{min}^* = \frac{1}{k(1 + \gamma/F_{max})}$ 代入：
+\begin{equation}
+\frac{1}{k(1 + \gamma/F_{max})} - \frac{k}{2} \left( 1 + \frac{\gamma}{F_{max}} \right) \left[ \frac{1}{k(1 + \gamma/F_{max})} \right]^2 > 0
+\end{equation}
+\begin{equation}
+\frac{1}{k(1 + \gamma/F_{max})} - \frac{1}{2k(1 + \gamma/F_{max})} > 0
+\end{equation}
+\begin{equation}
+\frac{1}{2k(1 + \gamma/F_{max})} > 0
+\end{equation}
+这个条件总是成立的，因为 $k>0, \gamma>0, F_{max}>0$。
+
+因此，在本模型的假设下（确定性产出 $q=e$，努力成本 $c(e)=\frac{k}{2}e^2$，监督成本 $M(p)=\gamma p$，风险中性），只要可以实施监督和惩罚 ($F_{max}>0, \gamma < \infty$)，雇主总是会选择诱导一个正的最低努力水平 $e_{min}^* = \frac{1}{k(1 + \gamma/F_{max})}$，并设定相应的监督概率 $p^{**}$ 和工资 $w^{**}$，这比完全放任摸鱼（利润为0）要更优。
+
+\section{参数变化对最优契约的影响（比较静态分析）}
+\label{sec:comparative_statics}
+
+我们来分析关键参数如何影响雇主选择的最优最低努力标准 $e_{min}^*$ 以及相应的监督和工资水平：
+
+\begin{itemize}
+    \item \textbf{努力成本系数 $k$ 的影响}：
+      $\frac{\partial e_{min}^*}{\partial k} = -\frac{1}{k^2 (1 + \gamma/F_{max})} < 0$.
+      当努力变得更加困难（$k$ 增大）时，雇主会降低所要求的最低努力标准 $e_{min}^*$。因为诱导相同努力水平的成本（包括支付给员工的补偿 $w^*=c(e_{min})$ 和维持监督所需的预期惩罚 $p^* F_{max} = c(e_{min})$，后者影响监督成本）增加了。
+
+    \item \textbf{监督成本系数 $\gamma$ 的影响}：
+      $\frac{\partial e_{min}^*}{\partial \gamma} = -\frac{1}{k (1 + \gamma/F_{max})^2} \cdot \frac{1}{F_{max}} < 0$.
+      当监督变得更加昂贵（$\gamma$ 增大）时，雇主也会选择降低最低努力标准 $e_{min}^*$。因为提高 $e_{min}$ 需要更高的 $p^*$（见公式 \ref{eq:optimal_p}），这会导致更高的监督成本 $\gamma p^*$。为了节省监督成本，雇主会降低目标努力水平。
+
+    \item \textbf{最大惩罚 $F_{max}$ 的影响}：
+      $\frac{\partial e_{min}^*}{\partial F_{max}} = -\frac{1}{k (1 + \gamma/F_{max})^2} \cdot (-\frac{\gamma}{F_{max}^2}) = \frac{\gamma}{k F_{max}^2 (1 + \gamma/F_{max})^2} > 0$.
+      当最大允许的惩罚力度增大（$F_{max}$ 增大）时，雇主会设定更高的最低努力标准 $e_{min}^*$。因为更大的惩罚力度使得监督更具威慑力，达到相同 $pF$ 门槛所需的监督概率 $p^*$ 就更低（$p^* = c(e_{min})/F_{max}$），从而降低了实现给定 $e_{min}$ 的监督成本 $\gamma p^*$。这使得雇主有动力去追求更高的努力水平。
+\end{itemize}
+
+这些结果符合直觉：努力成本和监督成本的增加会抑制雇主追求高努力水平，而惩罚力度的增加则会激励雇主设定更高的努力目标。
+
+\section{模型局限与讨论}
+\label{sec:discussion_limitations}
+
+本章基于第三章建立的简单模型进行了分析，揭示了在固定工资加监督惩罚机制下，雇主如何通过设定最优的最低努力标准和监督概率来应对雇员的\zhquote{摸鱼}行为。模型导出了清晰的最优契约参数和比较静态结果。
+
+然而，这个模型也存在一些显著的局限性，值得在后续研究中探讨：
+
+1.  \textbf{努力选择的离散性}：模型预测雇员只会在 $e=0$ 和 $e=e_{min}$ 之间选择，未能刻画更现实的连续或多层级的\zhquote{摸鱼}程度。这主要是由于监督机制被设定为仅区分是否低于 $e_{min}$。
+2.  \textbf{激励机制的单一性}：模型只考虑了固定工资加监督惩罚。现实中广泛使用的绩效工资（如基于产出的奖金）并未纳入分析。绩效工资可以直接将报酬与产出（进而与努力）挂钩，可能提供更强的连续激励，尤其是在产出与努力正相关但存在随机性的情况下。
+3.  \textbf{确定性产出假设}：我们为了简化雇主问题的分析，暂时使用了 $q=e$ 的假设。引入随机产出 $q = e + \epsilon$ 会使问题更复杂但更现实。在随机产出下，即使观察到 $q$ 也无法完全推断 $e$，监督的作用可能更加重要，或者需要设计基于产出的激励合同来平衡风险与激励。
+4.  \textbf{风险中性假设}：假设雇员和雇主都是风险中性的。如果雇员是风险规避的，他们会对收入的不确定性（例如，依赖于随机产出的绩效工资，或被惩罚的风险）要求风险溢价，这将影响最优契约的设计，需要在激励效果和风险成本之间权衡。
+5.  \textbf{单周期模型}：模型是静态的单周期模型，未考虑长期雇佣关系中的重复博弈、声誉效应、学习效应或职业发展等动态因素，这些因素可能显著影响员工的\zhquote{摸鱼}行为和雇主的策略选择。
+
+尽管存在这些局限，本章的分析为理解监督与惩罚机制在约束\zhquote{摸鱼}行为中的作用提供了一个基础框架。它清晰地展示了雇主如何权衡诱导努力的收益与相关的工资和监督成本。接下来的章节可以考虑引入实证研究。

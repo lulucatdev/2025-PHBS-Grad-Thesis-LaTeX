@@ -1,0 +1,153 @@
+\chapter{Model Analysis}
+\label{chap:analysis}
+
+Based on the theoretical model constructed in Chapter Three, this chapter will delve into the analysis of the employee's optimal effort decision and its influencing factors. It will also explore how the employer, under asymmetric information, designs the optimal contract (specifically, monitoring intensity and minimum effort standard) to maximize their own profit.
+
+\section{Analysis of Employee's Optimal Effort Decision}
+\label{sec:agent_decision_analysis}
+
+Recalling the analysis results from Section \ref{sec:agent_behavior_monitor} of Chapter Three, under a contract with fixed wage $w$, monitoring probability $p$, minimum effort standard $e_{min}$, and penalty $F$, a risk-neutral employee compares the utility of choosing $e=e_{min}$, which is $U_1^* = w - c(e_{min})$, with the expected utility of choosing $e=0$, which is $E[U_2^*] = w - pF$.
+
+The final decision rule is (as shown in Equation \ref{eq:agent_choice_recap}):
+\begin{equation} \label{eq:agent_choice_recap}
+e^* = \begin{cases} e_{min} & \text{if } pF \ge c(e_{min}) \\ 0 & \text{if } pF < c(e_{min}) \end{cases}
+\end{equation}
+
+This result reveals several key points:
+\begin{enumerate}
+    \item {Threshold Effect of Monitoring and Penalty}: Whether the employee chooses to meet the minimum effort standard $e_{min}$ depends entirely on whether the expected penalty $pF$ is sufficient to cover the effort cost $c(e_{min})$ required to reach that standard. This is a clear threshold effect. Only when the product of the monitoring probability $p$ and the penalty magnitude $F$ crosses the threshold $c(e_{min})$ does the employee's behavior jump from no effort ($e=0$, maximizing \enquote{shirking}) to just meeting the minimum required effort ($e=e_{min}$).
+    \item {Inability to Incentivize Excess Effort}: This mechanism can only incentivize the employee to meet the minimum standard $e_{min}$; it cannot motivate them to exert effort beyond $e_{min}$. Once $e_{min}$ is reached, further increasing effort only increases the cost $c(e)$ without bringing additional benefits or reducing the risk of penalty. This reflects the limitations of contracts relying solely on \enquote{baseline monitoring} for incentives.
+    \item {Binary Nature of the \enquote{Optimal Shirking} Strategy}: In this simple model, the employee's \enquote{shirking} strategy exhibits a relatively extreme binary choice: either exert no effort ($e=0$) or just meet the minimum standard ($e=e_{min}$). There is no equilibrium state of \enquote{partial shirking} in between. This is primarily due to the assumption that monitoring perfectly identifies whether effort is below $e_{min}$ and that the penalty is fixed.
+\end{enumerate}
+
+This analysis highlights the central roles of $p$, $F$, $e_{min}$, and the cost function $c(\cdot)$ in determining the employee's effort behavior. Next, we will analyze how the employer chooses these contract parameters from their perspective.
+
+\section{The Principal's Contract Design Problem}
+\label{sec:principal_problem}
+
+Now we consider the decision problem of the employer (P). The employer's goal is to maximize their expected profit $E[\pi]$. Assume the employer is risk-neutral. Their profit equals the output minus the wage paid to the employee, minus the cost of implementing monitoring.
+
+We adopt the deterministic output assumption $q=e$ introduced in Chapter Three (\ref{sec:model_setup}) to simplify the first step of analyzing the employer's problem. This can be extended later to the stochastic output case.
+Assume the cost of monitoring depends on the monitoring probability $p$. Let the monitoring cost be $M(p)$. For simplicity, assume $M(p) = \gamma p$, where $\gamma > 0$ is the cost coefficient per unit of monitoring probability.
+
+The employer needs to choose the contract parameters $(w, p, e_{min}, F)$. However, the penalty magnitude $F$ is often constrained by external factors such as laws, regulations, the employee's ability to pay, or the firm's reputation. Therefore, we assume there exists a maximum feasible penalty $F_{max}$, such that $0 \le F \le F_{max}$. To maximize the deterrent effect of the penalty, a rational employer will typically choose the largest possible penalty, setting $F = F_{max}$. Thus, the employer's decision variables simplify to $(w, p, e_{min})$.
+
+The employer's optimization problem is:
+\begin{equation}
+\max_{w, p, e_{min}} \quad E[\pi] = e^* - w - \gamma p
+\end{equation}
+subject to:
+\begin{enumerate}
+    \item Incentive Compatibility Constraint (IC): The employee will choose the optimal effort $e^*$ according to Equation \ref{eq:agent_choice_recap}.
+    \begin{equation} \label{eq:ic_constraint}
+    e^* = \begin{cases} e_{min} & \text{if } p F_{max} \ge c(e_{min}) \\ 0 & \text{if } p F_{max} < c(e_{min}) \end{cases}
+    \end{equation}
+    \item Participation Constraint (PC): The expected utility the employee receives from accepting the contract must be no less than their reservation utility $\bar{U}=0$.
+    \begin{equation} \label{eq:pc_constraint}
+    E[U(e^*)] = w - c(e^*) - p \cdot \mathbb{I}(e^* < e_{min}) \cdot F_{max} \ge 0
+    \end{equation}
+\end{enumerate}
+where $0 \le p \le 1$ and $e_{min} \ge 0$.
+
+\section{Optimal Contract Analysis: Fixed Wage and Monitoring}
+\label{sec:optimal_contract_monitor}
+
+When making the decision, the employer essentially faces two choices: either design a contract to incentivize the employee to choose $e^*=e_{min}$ (effort-inducing strategy) or accept the employee choosing $e^*=0$ (laissez-faire shirking strategy).
+
+{Strategy One: Inducing Effort $e^* = e_{min}$}
+
+For the employee to choose $e^* = e_{min}$, the IC condition $p F_{max} \ge c(e_{min})$ must be satisfied. To minimize the monitoring cost $\gamma p$, the employer will choose the lowest monitoring probability $p$ that satisfies this condition. That is:
+\begin{equation} \label{eq:optimal_p}
+p^* = \frac{c(e_{min})}{F_{max}}
+\end{equation}
+This implicitly assumes $c(e_{min}) \le F_{max}$, otherwise the condition cannot be met even if $p=1$. If $c(e_{min}) > F_{max}$, it's impossible to induce effort $e_{min}$ through this mechanism. We assume $F_{max}$ is large enough to make $p^* \le 1$ feasible.
+
+In this case, the employee's effort is $e^*=e_{min}$, and their expected utility is $E[U(e_{min})] = w - c(e_{min}) - p^* \cdot \mathbb{I}(e_{min} < e_{min}) \cdot F_{max} = w - c(e_{min})$.
+To satisfy the PC constraint $w - c(e_{min}) \ge 0$ while minimizing wage costs, the employer will set the lowest feasible wage:
+\begin{equation} \label{eq:optimal_w_emin}
+w^* = c(e_{min})
+\end{equation}
+
+At this point, the employer's profit is:
+\begin{equation} \label{eq:profit_emin}
+\pi_1(e_{min}) = e_{min} - w^* - \gamma p^* = e_{min} - c(e_{min}) - \gamma \frac{c(e_{min})}{F_{max}}
+\end{equation}
+The employer also needs to choose the optimal $e_{min}$ to maximize $\pi_1(e_{min})$. Assuming the effort cost function is $c(e) = \frac{k}{2}e^2$ ($k>0$), then
+\begin{equation}
+\pi_1(e_{min}) = e_{min} - \frac{k}{2}e_{min}^2 - \gamma \frac{k e_{min}^2}{2 F_{max}} = e_{min} - \frac{k}{2} \left( 1 + \frac{\gamma}{F_{max}} \right) e_{min}^2
+\end{equation}
+Taking the first derivative with respect to $e_{min}$ and setting it to zero:
+\begin{equation}
+\frac{d\pi_1}{de_{min}} = 1 - k \left( 1 + \frac{\gamma}{F_{max}} \right) e_{min} = 0
+\end{equation}
+Solving for the optimal minimum effort requirement $e_{min}^*$:
+\begin{equation} \label{eq:optimal_emin}
+e_{min}^* = \frac{1}{k \left( 1 + \frac{\gamma}{F_{max}} \right)}
+\end{equation}
+The second derivative is $-k(1 + \gamma/F_{max}) < 0$, confirming it is a maximum point.
+Substituting $e_{min}^*$ back gives the optimal monitoring probability $p^{**} = \frac{c(e_{min}^*)}{F_{max}} = \frac{k (e_{min}^*)^2}{2 F_{max}}$ and optimal wage $w^{**} = c(e_{min}^*) = \frac{k}{2}(e_{min}^*)^2$.
+
+{Strategy Two: Allowing Shirking $e^* = 0$}
+
+If the employer designs contract parameters such that $p F_{max} < c(e_{min})$, or simply sets $p=0$ and $e_{min}>0$ (or $e_{min}=0$), the employee will choose $e^*=0$.
+In this case, the employee's effort is $e^*=0$, and their expected utility is $E[U(0)] = w - c(0) - p \cdot \mathbb{I}(0 < e_{min}) \cdot F_{max} = w - p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max}$.
+To satisfy the PC constraint $w - p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max} \ge 0$, the employer will set the minimum wage $w^* = p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max}$.
+The employer's profit is $E[\pi_0] = e^* - w^* - \gamma p = 0 - p \cdot \mathbb{I}(e_{min}>0) \cdot F_{max} - \gamma p$.
+Clearly, to maximize this profit (i.e., minimize loss), the employer's optimal choice is to set $p=0$. Then, the employee chooses $e^*=0$, the wage is $w^*=0$, and the profit is $\pi_0 = 0$.
+
+{The Employer's Final Decision}
+
+The employer compares the maximum profit obtainable from Strategy One (inducing effort $e_{min}^*$), $\pi_1(e_{min}^*)$, with the profit from Strategy Two (allowing shirking $e=0$), $\pi_0 = 0$.
+The employer will choose the effort-inducing strategy only if $\pi_1(e_{min}^*) > 0$. That is:
+\begin{equation}
+\pi_1(e_{min}^*) = e_{min}^* - \frac{k}{2} \left( 1 + \frac{\gamma}{F_{max}} \right) (e_{min}^*)^2 > 0
+\end{equation}
+Substituting $e_{min}^* = \frac{1}{k(1 + \gamma/F_{max})}$:
+\begin{equation}
+\frac{1}{k(1 + \gamma/F_{max})} - \frac{k}{2} \left( 1 + \frac{\gamma}{F_{max}} \right) \left[ \frac{1}{k(1 + \gamma/F_{max})} \right]^2 > 0
+\end{equation}
+\begin{equation}
+\frac{1}{k(1 + \gamma/F_{max})} - \frac{1}{2k(1 + \gamma/F_{max})} > 0
+\end{equation}
+\begin{equation}
+\frac{1}{2k(1 + \gamma/F_{max})} > 0
+\end{equation}
+This condition always holds, since $k>0, \gamma>0, F_{max}>0$.
+
+Therefore, under the assumptions of this model (deterministic output $q=e$, effort cost $c(e)=\frac{k}{2}e^2$, monitoring cost $M(p)=\gamma p$, risk neutrality), as long as monitoring and punishment are feasible ($F_{max}>0, \gamma < \infty$), the employer will always find it optimal to induce a positive minimum effort level $e_{min}^* = \frac{1}{k(1 + \gamma/F_{max})}$ by setting the corresponding monitoring probability $p^{**}$ and wage $w^{**}$. This is strictly better than allowing complete shirking (profit of 0).
+
+\section{Impact of Parameter Changes on the Optimal Contract (Comparative Statics)}
+\label{sec:comparative_statics}
+
+Let's analyze how key parameters affect the employer's choice of the optimal minimum effort standard $e_{min}^*$ and the corresponding monitoring and wage levels:
+
+\begin{itemize}
+    \item {Impact of effort cost coefficient $k$}:
+      $\frac{\partial e_{min}^*}{\partial k} = -\frac{1}{k^2 (1 + \gamma/F_{max})} < 0$.
+      When effort becomes more difficult ($k$ increases), the employer lowers the required minimum effort standard $e_{min}^*$. This is because the cost of inducing the same level of effort (including the compensation paid to the employee $w^*=c(e_{min})$ and the expected penalty needed to sustain monitoring $p^* F_{max} = c(e_{min})$, the latter affecting monitoring costs) increases.
+
+    \item {Impact of monitoring cost coefficient $\gamma$}:
+      $\frac{\partial e_{min}^*}{\partial \gamma} = -\frac{1}{k (1 + \gamma/F_{max})^2} \cdot \frac{1}{F_{max}} < 0$.
+      When monitoring becomes more expensive ($\gamma$ increases), the employer also chooses to lower the minimum effort standard $e_{min}^*$. This is because increasing $e_{min}$ requires a higher $p^*$ (see Eq. \ref{eq:optimal_p}), leading to higher monitoring costs $\gamma p^*$. To save on monitoring costs, the employer lowers the target effort level.
+
+    \item {Impact of maximum penalty $F_{max}$}:
+      $\frac{\partial e_{min}^*}{\partial F_{max}} = -\frac{1}{k (1 + \gamma/F_{max})^2} \cdot (-\frac{\gamma}{F_{max}^2}) = \frac{\gamma}{k F_{max}^2 (1 + \gamma/F_{max})^2} > 0$.
+      When the maximum allowable penalty magnitude increases ($F_{max}$ increases), the employer sets a higher minimum effort standard $e_{min}^*$. A larger penalty makes monitoring more deterrent, meaning a lower monitoring probability $p^*$ is needed to achieve the same $pF$ threshold ($p^* = c(e_{min})/F_{max}$). This reduces the monitoring cost $\gamma p^*$ associated with achieving a given $e_{min}$, incentivizing the employer to aim for higher effort levels.
+\end{itemize}
+
+These results are intuitive: increases in effort cost and monitoring cost discourage the employer from pursuing high effort levels, while an increase in penalty power encourages the employer to set higher effort targets.
+
+\section{Model Limitations and Discussion}
+\label{sec:discussion_limitations}
+
+This chapter analyzed the simple model established in Chapter Three, revealing how, under a fixed wage plus monitoring-penalty mechanism, the employer addresses employee \enquote{shirking} by setting an optimal minimum effort standard and monitoring probability. The model yielded clear optimal contract parameters and comparative statics results.
+
+However, this model also has significant limitations that warrant exploration in future research:
+
+1.  {Discreteness of Effort Choice}: The model predicts that the employee will only choose between $e=0$ and $e=e_{min}$, failing to capture the more realistic continuous or multi-level nature of \enquote{shirking}. This is mainly due to the monitoring mechanism being set up only to distinguish whether effort is below $e_{min}$.
+2.  {Simplicity of Incentive Mechanism}: The model only considers a fixed wage plus monitoring and penalties. Performance pay (such as output-based bonuses), which is widely used in practice, was not included in the analysis. Performance pay can directly link remuneration to output (and thus effort), potentially providing stronger continuous incentives, especially when output is positively correlated with effort but subject to randomness.
+3.  {Deterministic Output Assumption}: To simplify the analysis of the employer's problem, we temporarily used the assumption $q=e$. Introducing stochastic output $q = e + \epsilon$ would make the problem more complex but more realistic. Under stochastic output, observing $q$ does not allow perfect inference of $e$, making the role of monitoring potentially more crucial, or requiring the design of output-based incentive contracts to balance risk and incentives.
+4.  {Risk Neutrality Assumption}: Both the employee and employer were assumed to be risk-neutral. If employees are risk-averse, they would demand a risk premium for income uncertainty (e.g., from performance pay depending on random output, or the risk of being penalized). This would affect the design of the optimal contract, requiring a trade-off between incentive effects and risk costs.
+5.  {Single-Period Model}: The model is static and single-period, neglecting dynamic factors in long-term employment relationships such as repeated interactions, reputation effects, learning effects, or career development. These factors could significantly influence employees' \enquote{shirking} behavior and employers' strategic choices.
+
+Despite these limitations, the analysis in this chapter provides a foundational framework for understanding the role of monitoring and penalty mechanisms in constraining \enquote{shirking} behavior. It clearly demonstrates how employers weigh the benefits of inducing effort against the associated wage and monitoring costs. Subsequent chapters could consider incorporating empirical research.

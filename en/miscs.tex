@@ -1,0 +1,41 @@
+% 英文引号
+\newcommand{\enquote}[1]{``{#1}''}
+% 中文引号
+\newcommand{\zhquote}[1]{“{#1}”}
+% 方框
+\renewcommand{\Box}{\mdlgwhtsquare}
+% 对勾
+\newcommand{\checkbox}{$\checkmark$}
+% 勾选了对勾的方框
+\newcommand{\checkedbox}{\mbox{\mdlgwhtsquare\hspace{-0.75em}\raisebox{0.15ex}{$\checkmark$}}}
+% 学位类型View
+\newcommand{\degreetype}{ % 学位类型
+  \ifthenelse{\equal{\isacademicdegree}{true}}
+  {
+    {\fangsong\zihao{3} \checkedbox 学术学位\hspace{2em} \zihao{3} \Box 专业学位}
+  }
+  {
+    {\fangsong\zihao{3} \Box 学术学位\hspace{2em} \zihao{3} \checkedbox 专业学位}
+  }
+}
+
+
+\pkuthssinfo{
+    cthesisname = {硕士学位论文},
+    thesiscover = {硕士研究生学位论文},
+    ethesisname = {Master Thesis},
+    ctitle = {\zhtitle},
+    etitle = {\entitle},
+    cauthor = {\zhauthor}, eauthor = {\enauthor},
+    studentid = {\thestudentid},
+    % 具体时间以教务为准，初稿3月，送审4月，答辩5月，最终6月。
+    date = {\zhdigits{\theyear}\ \ 年\ \ \zhnumber{\themonth}\ \ 月}, % June, 2022
+    school = {汇丰商学院},
+    cmajor = {\zhmajor}, emajor = {\enmajor},
+    direction = {\majordirection},
+    % 副教授 A.P. 讲师 Lec.
+    cmentor = {\zhmentor}, ementor = {\enmentor},
+    ckeywords = {\zhkeywords}, ekeywords = {\enkeywords},
+    % 盲审模式参数, 需在documentclass增加blind
+    % blindid = {XXXXXXXXX}, discipline = {XXXX}
+}

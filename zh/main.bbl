@@ -1,0 +1,1324 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{gb7714-2015/global//global/global}
+    \entry{akerlof1970market}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f198b417f1390a0f8ff279349b43f47d}{%
+           family={Akerlof},
+           familyi={A\bibinitperiod},
+           given={George\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=f198b417f1390a0f8ff279349b43f47d}{%
+           family={Akerlof},
+           familyi={A\bibinitperiod},
+           given={George\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{fullhash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{bibnamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authorbibnamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authornamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authorfullhash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{nameabibnamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{nameanamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{nameafullhash}{f198b417f1390a0f8ff279349b43f47d}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{The market for "lemons": Quality uncertainty and the market mechanism}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{84}
+      \field{year}{1970}
+      \field{dateera}{ce}
+      \field{pages}{488\bibrangedash 500}
+      \range{pages}{13}
+      \keyw{akerlof1970market}
+    \endentry
+    \entry{akerlof1986efficiency}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f198b417f1390a0f8ff279349b43f47d}{%
+           family={Akerlof},
+           familyi={A\bibinitperiod},
+           given={George\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8d4728dc0c780ad9eab3cc6701839f87}{%
+           family={Yellen},
+           familyi={Y\bibinitperiod},
+           given={Janet\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=f198b417f1390a0f8ff279349b43f47d}{%
+           family={Akerlof},
+           familyi={A\bibinitperiod},
+           given={George\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8d4728dc0c780ad9eab3cc6701839f87}{%
+           family={Yellen},
+           familyi={Y\bibinitperiod},
+           given={Janet\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{fullhash}{ac6e2ec5bd6ba60c027d44e295ed3a79}
+      \strng{bibnamehash}{ac6e2ec5bd6ba60c027d44e295ed3a79}
+      \strng{authorbibnamehash}{ac6e2ec5bd6ba60c027d44e295ed3a79}
+      \strng{authornamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{authorfullhash}{ac6e2ec5bd6ba60c027d44e295ed3a79}
+      \strng{nameabibnamehash}{ac6e2ec5bd6ba60c027d44e295ed3a79}
+      \strng{nameanamehash}{f198b417f1390a0f8ff279349b43f47d}
+      \strng{nameafullhash}{ac6e2ec5bd6ba60c027d44e295ed3a79}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficiency wage models of the labor market}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \keyw{akerlof1986efficiency}
+    \endentry
+    \entry{alchian1972production}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7ccf4d439c6bb7b9a879fc1a0a5be611}{%
+           family={Alchian},
+           familyi={A\bibinitperiod},
+           given={Armen\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0ad7a87afd5de05ef3aa8b042e0065e5}{%
+           family={Demsetz},
+           familyi={D\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=7ccf4d439c6bb7b9a879fc1a0a5be611}{%
+           family={Alchian},
+           familyi={A\bibinitperiod},
+           given={Armen\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0ad7a87afd5de05ef3aa8b042e0065e5}{%
+           family={Demsetz},
+           familyi={D\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{7ccf4d439c6bb7b9a879fc1a0a5be611}
+      \strng{fullhash}{8226728007e6d0d2a5c45036952f9dff}
+      \strng{bibnamehash}{8226728007e6d0d2a5c45036952f9dff}
+      \strng{authorbibnamehash}{8226728007e6d0d2a5c45036952f9dff}
+      \strng{authornamehash}{7ccf4d439c6bb7b9a879fc1a0a5be611}
+      \strng{authorfullhash}{8226728007e6d0d2a5c45036952f9dff}
+      \strng{nameabibnamehash}{8226728007e6d0d2a5c45036952f9dff}
+      \strng{nameanamehash}{7ccf4d439c6bb7b9a879fc1a0a5be611}
+      \strng{nameafullhash}{8226728007e6d0d2a5c45036952f9dff}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Economic Review}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{Production, information costs, and economic organization}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{62}
+      \field{year}{1972}
+      \field{dateera}{ce}
+      \field{pages}{777\bibrangedash 795}
+      \range{pages}{19}
+      \keyw{alchian1972production}
+    \endentry
+    \entry{ashforth1990social}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f18b86b2536cbc63a2959528af4433e7}{%
+           family={Ashforth},
+           familyi={A\bibinitperiod},
+           given={Blake\bibnamedelima E},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=040fdeb9a7b4d2c21932eef611974a8f}{%
+           family={Mael},
+           familyi={M\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=f18b86b2536cbc63a2959528af4433e7}{%
+           family={Ashforth},
+           familyi={A\bibinitperiod},
+           given={Blake\bibnamedelima E},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=040fdeb9a7b4d2c21932eef611974a8f}{%
+           family={Mael},
+           familyi={M\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Academy of Management}%
+      }
+      \strng{namehash}{f18b86b2536cbc63a2959528af4433e7}
+      \strng{fullhash}{f6cebbcc67add9f423719db416e7bdce}
+      \strng{bibnamehash}{f6cebbcc67add9f423719db416e7bdce}
+      \strng{authorbibnamehash}{f6cebbcc67add9f423719db416e7bdce}
+      \strng{authornamehash}{f18b86b2536cbc63a2959528af4433e7}
+      \strng{authorfullhash}{f6cebbcc67add9f423719db416e7bdce}
+      \strng{nameabibnamehash}{f6cebbcc67add9f423719db416e7bdce}
+      \strng{nameanamehash}{f18b86b2536cbc63a2959528af4433e7}
+      \strng{nameafullhash}{f6cebbcc67add9f423719db416e7bdce}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Academy of Management Review}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Social identity theory and the organization}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{14}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \field{pages}{20\bibrangedash 39}
+      \range{pages}{20}
+      \keyw{ashforth1990social}
+    \endentry
+    \entry{axelrod1984evolution}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5806c3a1826ab7800a84dc8c5a4fb566}{%
+           family={Axelrod},
+           familyi={A\bibinitperiod},
+           given={Robert\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=5806c3a1826ab7800a84dc8c5a4fb566}{%
+           family={Axelrod},
+           familyi={A\bibinitperiod},
+           given={Robert\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Basic books}%
+      }
+      \strng{namehash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{fullhash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{bibnamehash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{authorbibnamehash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{authornamehash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{authorfullhash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{nameabibnamehash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{nameanamehash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \strng{nameafullhash}{5806c3a1826ab7800a84dc8c5a4fb566}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{The evolution of cooperation}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1984}
+      \field{dateera}{ce}
+      \keyw{axelrod1984evolution}
+    \endentry
+    \entry{colquitt2001organizational}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4dc5a40b6d54706d7a42d760b22c5879}{%
+           family={Colquitt},
+           familyi={C\bibinitperiod},
+           given={Jason\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=cd04c6d4c29ac13b740765a6894a2357}{%
+           family={Lepine},
+           familyi={L\bibinitperiod},
+           given={Jeffrey\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8904ad3dbdb5a52fae76228b6b522232}{%
+           family={Wesson},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=4dc5a40b6d54706d7a42d760b22c5879}{%
+           family={Colquitt},
+           familyi={C\bibinitperiod},
+           given={Jason\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=cd04c6d4c29ac13b740765a6894a2357}{%
+           family={Lepine},
+           familyi={L\bibinitperiod},
+           given={Jeffrey\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8904ad3dbdb5a52fae76228b6b522232}{%
+           family={Wesson},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{4dc5a40b6d54706d7a42d760b22c5879}
+      \strng{fullhash}{69ad2bfa9fc3e95b27192b3455e49f12}
+      \strng{bibnamehash}{69ad2bfa9fc3e95b27192b3455e49f12}
+      \strng{authorbibnamehash}{69ad2bfa9fc3e95b27192b3455e49f12}
+      \strng{authornamehash}{4dc5a40b6d54706d7a42d760b22c5879}
+      \strng{authorfullhash}{69ad2bfa9fc3e95b27192b3455e49f12}
+      \strng{nameabibnamehash}{69ad2bfa9fc3e95b27192b3455e49f12}
+      \strng{nameanamehash}{4dc5a40b6d54706d7a42d760b22c5879}
+      \strng{nameafullhash}{69ad2bfa9fc3e95b27192b3455e49f12}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Applied Psychology}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Organizational justice and the psychological contract: A validation study}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{86}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{904}
+      \range{pages}{1}
+      \keyw{colquitt2001organizational}
+    \endentry
+    \entry{deci1985intrinsic}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d733c22238af349bac296bb1e5b60deb}{%
+           family={Deci},
+           familyi={D\bibinitperiod},
+           given={Edward\bibnamedelima L},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=49ad03aeb3155f395016c49dd507c027}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=d733c22238af349bac296bb1e5b60deb}{%
+           family={Deci},
+           familyi={D\bibinitperiod},
+           given={Edward\bibnamedelima L},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=49ad03aeb3155f395016c49dd507c027}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Plenum}%
+      }
+      \strng{namehash}{d733c22238af349bac296bb1e5b60deb}
+      \strng{fullhash}{61b07b9305b8667ddab849ab53eb9818}
+      \strng{bibnamehash}{61b07b9305b8667ddab849ab53eb9818}
+      \strng{authorbibnamehash}{61b07b9305b8667ddab849ab53eb9818}
+      \strng{authornamehash}{d733c22238af349bac296bb1e5b60deb}
+      \strng{authorfullhash}{61b07b9305b8667ddab849ab53eb9818}
+      \strng{nameabibnamehash}{61b07b9305b8667ddab849ab53eb9818}
+      \strng{nameanamehash}{d733c22238af349bac296bb1e5b60deb}
+      \strng{nameafullhash}{61b07b9305b8667ddab849ab53eb9818}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Intrinsic motivation and self-determination in human behavior}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \keyw{deci1985intrinsic}
+    \endentry
+    \entry{fama1980agency}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=cf1dad75742cba1f00261a0ee70e7ba2}{%
+           family={Fama},
+           familyi={F\bibinitperiod},
+           given={Eugene\bibnamedelima F},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{fullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{bibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authorbibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authornamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{authorfullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{nameabibnamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{nameanamehash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \strng{nameafullhash}{cf1dad75742cba1f00261a0ee70e7ba2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Agency problems and the theory of the firm}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{88}
+      \field{year}{1980}
+      \field{dateera}{ce}
+      \field{pages}{288\bibrangedash 307}
+      \range{pages}{20}
+      \keyw{fama1980agency}
+    \endentry
+    \entry{frey1997not}{article}{}
+      \name{author}{1}{}{%
+        {{hash=85d62cb6459945083935c5843811bc5e}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Bruno\bibnamedelima S},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=85d62cb6459945083935c5843811bc5e}{%
+           family={Frey},
+           familyi={F\bibinitperiod},
+           given={Bruno\bibnamedelima S},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{85d62cb6459945083935c5843811bc5e}
+      \strng{fullhash}{85d62cb6459945083935c5843811bc5e}
+      \strng{bibnamehash}{85d62cb6459945083935c5843811bc5e}
+      \strng{authorbibnamehash}{85d62cb6459945083935c5843811bc5e}
+      \strng{authornamehash}{85d62cb6459945083935c5843811bc5e}
+      \strng{authorfullhash}{85d62cb6459945083935c5843811bc5e}
+      \strng{nameabibnamehash}{85d62cb6459945083935c5843811bc5e}
+      \strng{nameanamehash}{85d62cb6459945083935c5843811bc5e}
+      \strng{nameafullhash}{85d62cb6459945083935c5843811bc5e}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Edward Elgar Publishing}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Not just for the money: an economic theory of personal motivation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \keyw{frey1997not}
+    \endentry
+    \entry{gibbons1999careers}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=7280588276c0e422080539029ff00147}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=aebbee27ef374ea21c8ece8d8162c8a6}{%
+           family={Waldman},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=7280588276c0e422080539029ff00147}{%
+           family={Gibbons},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=aebbee27ef374ea21c8ece8d8162c8a6}{%
+           family={Waldman},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7280588276c0e422080539029ff00147}
+      \strng{fullhash}{c4518b8f77b32dff4a66f6650d5004e8}
+      \strng{bibnamehash}{c4518b8f77b32dff4a66f6650d5004e8}
+      \strng{authorbibnamehash}{c4518b8f77b32dff4a66f6650d5004e8}
+      \strng{authornamehash}{7280588276c0e422080539029ff00147}
+      \strng{authorfullhash}{c4518b8f77b32dff4a66f6650d5004e8}
+      \strng{nameabibnamehash}{c4518b8f77b32dff4a66f6650d5004e8}
+      \strng{nameanamehash}{7280588276c0e422080539029ff00147}
+      \strng{nameafullhash}{c4518b8f77b32dff4a66f6650d5004e8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of labor economics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Careers in organizations: Theory and evidence}
+      \field{usera}{G}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{3}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{2373\bibrangedash 2437}
+      \range{pages}{65}
+      \keyw{gibbons1999careers}
+    \endentry
+    \entry{grossman1983analysis}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a0e1f164ed9c0f1df4d104f87bd0666a}{%
+           family={Grossman},
+           familyi={G\bibinitperiod},
+           given={Sanford\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b543ea2ee9d551349b4fbf9998572166}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=a0e1f164ed9c0f1df4d104f87bd0666a}{%
+           family={Grossman},
+           familyi={G\bibinitperiod},
+           given={Sanford\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b543ea2ee9d551349b4fbf9998572166}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Oliver\bibnamedelima D},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{a0e1f164ed9c0f1df4d104f87bd0666a}
+      \strng{fullhash}{cd33a3b355c96f3b4120075417c0438c}
+      \strng{bibnamehash}{cd33a3b355c96f3b4120075417c0438c}
+      \strng{authorbibnamehash}{cd33a3b355c96f3b4120075417c0438c}
+      \strng{authornamehash}{a0e1f164ed9c0f1df4d104f87bd0666a}
+      \strng{authorfullhash}{cd33a3b355c96f3b4120075417c0438c}
+      \strng{nameabibnamehash}{cd33a3b355c96f3b4120075417c0438c}
+      \strng{nameanamehash}{a0e1f164ed9c0f1df4d104f87bd0666a}
+      \strng{nameafullhash}{cd33a3b355c96f3b4120075417c0438c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica: Journal of the Econometric Society}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{An analysis of the principal-agent problem}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1983}
+      \field{dateera}{ce}
+      \field{pages}{7\bibrangedash 45}
+      \range{pages}{39}
+      \keyw{grossman1983analysis}
+    \endentry
+    \entry{hart1995firms}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3a7d6623a38151755be1d8592492c5d7}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=3a7d6623a38151755be1d8592492c5d7}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{fullhash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{bibnamehash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{authorbibnamehash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{authornamehash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{authorfullhash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{nameabibnamehash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{nameanamehash}{3a7d6623a38151755be1d8592492c5d7}
+      \strng{nameafullhash}{3a7d6623a38151755be1d8592492c5d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Firms, contracts, and financial structure}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \keyw{hart1995firms}
+    \endentry
+    \entry{holmstrom1979moral}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4ec3c67b648805ee3da894057f3f18b6}{%
+           family={Holmstrom},
+           familyi={H\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=4ec3c67b648805ee3da894057f3f18b6}{%
+           family={Holmstrom},
+           familyi={H\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{fullhash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{bibnamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{authorbibnamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{authornamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{authorfullhash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{nameabibnamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{nameanamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{nameafullhash}{4ec3c67b648805ee3da894057f3f18b6}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell Journal of Economics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Moral hazard and observability}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \field{pages}{74\bibrangedash 91}
+      \range{pages}{18}
+      \keyw{holmstrom1979moral}
+    \endentry
+    \entry{holmstrom1991multitask}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4ec3c67b648805ee3da894057f3f18b6}{%
+           family={Holmstrom},
+           familyi={H\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4a72201f09391b2eccac2ca94d4a921b}{%
+           family={Milgrom},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=4ec3c67b648805ee3da894057f3f18b6}{%
+           family={Holmstrom},
+           familyi={H\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4a72201f09391b2eccac2ca94d4a921b}{%
+           family={Milgrom},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{fullhash}{928a5caa0f1adac2913439180e8b39d4}
+      \strng{bibnamehash}{928a5caa0f1adac2913439180e8b39d4}
+      \strng{authorbibnamehash}{928a5caa0f1adac2913439180e8b39d4}
+      \strng{authornamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{authorfullhash}{928a5caa0f1adac2913439180e8b39d4}
+      \strng{nameabibnamehash}{928a5caa0f1adac2913439180e8b39d4}
+      \strng{nameanamehash}{4ec3c67b648805ee3da894057f3f18b6}
+      \strng{nameafullhash}{928a5caa0f1adac2913439180e8b39d4}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Law, Economics, \& Organization}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{special\_issue}
+      \field{title}{Multitask principal-agent analyses: Incentive contracts, asset ownership, and job design}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{7}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \field{pages}{24\bibrangedash 52}
+      \range{pages}{29}
+      \keyw{holmstrom1991multitask}
+    \endentry
+    \entry{jensen1976theory}{article}{}
+      \name{author}{2}{}{%
+        {{hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7ed0503cf00d1282e3b763ec6e46541b}{%
+           family={Meckling},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=db9155adcca41b20795e0ca0bbbc007c}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7ed0503cf00d1282e3b763ec6e46541b}{%
+           family={Meckling},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima H},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{fullhash}{29f206b2519a554e376bbe6d9788a822}
+      \strng{bibnamehash}{29f206b2519a554e376bbe6d9788a822}
+      \strng{authorbibnamehash}{29f206b2519a554e376bbe6d9788a822}
+      \strng{authornamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{authorfullhash}{29f206b2519a554e376bbe6d9788a822}
+      \strng{nameabibnamehash}{29f206b2519a554e376bbe6d9788a822}
+      \strng{nameanamehash}{db9155adcca41b20795e0ca0bbbc007c}
+      \strng{nameafullhash}{29f206b2519a554e376bbe6d9788a822}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of financial economics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Theory of the firm: Managerial behavior, agency costs and ownership structure}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{3}
+      \field{year}{1976}
+      \field{dateera}{ce}
+      \field{pages}{305\bibrangedash 360}
+      \range{pages}{56}
+      \keyw{jensen1976theory}
+    \endentry
+    \entry{lazear1999performance}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fad355fd0f0d4e5878443df140442088}{%
+           family={Lazear},
+           familyi={L\bibinitperiod},
+           given={Edward\bibnamedelima P},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=fad355fd0f0d4e5878443df140442088}{%
+           family={Lazear},
+           familyi={L\bibinitperiod},
+           given={Edward\bibnamedelima P},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{fad355fd0f0d4e5878443df140442088}
+      \strng{fullhash}{fad355fd0f0d4e5878443df140442088}
+      \strng{bibnamehash}{fad355fd0f0d4e5878443df140442088}
+      \strng{authorbibnamehash}{fad355fd0f0d4e5878443df140442088}
+      \strng{authornamehash}{fad355fd0f0d4e5878443df140442088}
+      \strng{authorfullhash}{fad355fd0f0d4e5878443df140442088}
+      \strng{nameabibnamehash}{fad355fd0f0d4e5878443df140442088}
+      \strng{nameanamehash}{fad355fd0f0d4e5878443df140442088}
+      \strng{nameafullhash}{fad355fd0f0d4e5878443df140442088}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{Performance pay and productivity}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{90}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{1346\bibrangedash 1361}
+      \range{pages}{16}
+      \keyw{lazear1999performance}
+    \endentry
+    \entry{lim2002it}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b3890bf821ccb2e4a911f247da2a817a}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Vivien\bibnamedelima KG},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=b3890bf821ccb2e4a911f247da2a817a}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Vivien\bibnamedelima KG},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{fullhash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{bibnamehash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{authorbibnamehash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{authornamehash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{authorfullhash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{nameabibnamehash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{nameanamehash}{b3890bf821ccb2e4a911f247da2a817a}
+      \strng{nameafullhash}{b3890bf821ccb2e4a911f247da2a817a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Organizational Behavior: The International Journal of Industrial, Occupational and Organizational Psychology and Behavior}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{5}
+      \field{title}{The IT way of loafing on the job: cyberloafing, neutralizing and organizational justice}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{675\bibrangedash 694}
+      \range{pages}{20}
+      \keyw{lim2002it}
+    \endentry
+    \entry{maslach2001job}{article}{}
+      \name{author}{3}{}{%
+        {{hash=08694fe233fb9da8ac71f724fc6c2a54}{%
+           family={Maslach},
+           familyi={M\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8c473af336ef193ebc2ba055bd970185}{%
+           family={Schaufeli},
+           familyi={S\bibinitperiod},
+           given={Wilmar\bibnamedelima B},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=32af5339b434fa2c13db2ccba1fe8279}{%
+           family={Leiter},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=08694fe233fb9da8ac71f724fc6c2a54}{%
+           family={Maslach},
+           familyi={M\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8c473af336ef193ebc2ba055bd970185}{%
+           family={Schaufeli},
+           familyi={S\bibinitperiod},
+           given={Wilmar\bibnamedelima B},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=32af5339b434fa2c13db2ccba1fe8279}{%
+           family={Leiter},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{08694fe233fb9da8ac71f724fc6c2a54}
+      \strng{fullhash}{cf20395cdfbe0122cd38d96bc4d5d7e7}
+      \strng{bibnamehash}{cf20395cdfbe0122cd38d96bc4d5d7e7}
+      \strng{authorbibnamehash}{cf20395cdfbe0122cd38d96bc4d5d7e7}
+      \strng{authornamehash}{08694fe233fb9da8ac71f724fc6c2a54}
+      \strng{authorfullhash}{cf20395cdfbe0122cd38d96bc4d5d7e7}
+      \strng{nameabibnamehash}{cf20395cdfbe0122cd38d96bc4d5d7e7}
+      \strng{nameanamehash}{08694fe233fb9da8ac71f724fc6c2a54}
+      \strng{nameafullhash}{cf20395cdfbe0122cd38d96bc4d5d7e7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of psychology}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Job burnout}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{52}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{397\bibrangedash 422}
+      \range{pages}{26}
+      \keyw{maslach2001job}
+    \endentry
+    \entry{robbins2016organizational}{book}{}
+      \name{author}{2}{}{%
+        {{hash=94ab8f2fa1f04f61f1923faffc1b5193}{%
+           family={Robbins},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=cf78f8a6df76ad0a747cf54e302cde36}{%
+           family={Judge},
+           familyi={J\bibinitperiod},
+           given={Timothy\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=94ab8f2fa1f04f61f1923faffc1b5193}{%
+           family={Robbins},
+           familyi={R\bibinitperiod},
+           given={Stephen\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=cf78f8a6df76ad0a747cf54e302cde36}{%
+           family={Judge},
+           familyi={J\bibinitperiod},
+           given={Timothy\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{94ab8f2fa1f04f61f1923faffc1b5193}
+      \strng{fullhash}{638d6d3c986e19b49df95fa9676ecb5c}
+      \strng{bibnamehash}{638d6d3c986e19b49df95fa9676ecb5c}
+      \strng{authorbibnamehash}{638d6d3c986e19b49df95fa9676ecb5c}
+      \strng{authornamehash}{94ab8f2fa1f04f61f1923faffc1b5193}
+      \strng{authorfullhash}{638d6d3c986e19b49df95fa9676ecb5c}
+      \strng{nameabibnamehash}{638d6d3c986e19b49df95fa9676ecb5c}
+      \strng{nameanamehash}{94ab8f2fa1f04f61f1923faffc1b5193}
+      \strng{nameafullhash}{638d6d3c986e19b49df95fa9676ecb5c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Organizational behavior}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \keyw{robbins2016organizational}
+    \endentry
+    \entry{rousseau1995psychological}{book}{}
+      \name{author}{1}{}{%
+        {{hash=385cb42371df2cace6f9c749b94a4496}{%
+           family={Rousseau},
+           familyi={R\bibinitperiod},
+           given={Denise\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=385cb42371df2cace6f9c749b94a4496}{%
+           family={Rousseau},
+           familyi={R\bibinitperiod},
+           given={Denise\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Sage publications}%
+      }
+      \strng{namehash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{fullhash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{bibnamehash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{authorbibnamehash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{authornamehash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{authorfullhash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{nameabibnamehash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{nameanamehash}{385cb42371df2cace6f9c749b94a4496}
+      \strng{nameafullhash}{385cb42371df2cace6f9c749b94a4496}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Psychological contracts in organizations: Understanding written and unwritten agreements}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \keyw{rousseau1995psychological}
+    \endentry
+    \entry{shapiro1984equilibrium}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6340b85ec1efcd67833befbb9a1ff577}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cb57f4b2aeede8f5865afde7b8453d40}{%
+           family={Stiglitz},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=6340b85ec1efcd67833befbb9a1ff577}{%
+           family={Shapiro},
+           familyi={S\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cb57f4b2aeede8f5865afde7b8453d40}{%
+           family={Stiglitz},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{6340b85ec1efcd67833befbb9a1ff577}
+      \strng{fullhash}{5987cdc55cbe1d0c44135af3dc524d0f}
+      \strng{bibnamehash}{5987cdc55cbe1d0c44135af3dc524d0f}
+      \strng{authorbibnamehash}{5987cdc55cbe1d0c44135af3dc524d0f}
+      \strng{authornamehash}{6340b85ec1efcd67833befbb9a1ff577}
+      \strng{authorfullhash}{5987cdc55cbe1d0c44135af3dc524d0f}
+      \strng{nameabibnamehash}{5987cdc55cbe1d0c44135af3dc524d0f}
+      \strng{nameanamehash}{6340b85ec1efcd67833befbb9a1ff577}
+      \strng{nameafullhash}{5987cdc55cbe1d0c44135af3dc524d0f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The American Economic Review}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Equilibrium unemployment as a worker discipline device}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{74}
+      \field{year}{1984}
+      \field{dateera}{ce}
+      \field{pages}{433\bibrangedash 444}
+      \range{pages}{12}
+      \keyw{shapiro1984equilibrium}
+    \endentry
+    \entry{spence1973job}{article}{}
+      \name{author}{1}{}{%
+        {{hash=aae176b15837266834493c7397512929}{%
+           family={Spence},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=aae176b15837266834493c7397512929}{%
+           family={Spence},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{aae176b15837266834493c7397512929}
+      \strng{fullhash}{aae176b15837266834493c7397512929}
+      \strng{bibnamehash}{aae176b15837266834493c7397512929}
+      \strng{authorbibnamehash}{aae176b15837266834493c7397512929}
+      \strng{authornamehash}{aae176b15837266834493c7397512929}
+      \strng{authorfullhash}{aae176b15837266834493c7397512929}
+      \strng{nameabibnamehash}{aae176b15837266834493c7397512929}
+      \strng{nameanamehash}{aae176b15837266834493c7397512929}
+      \strng{nameafullhash}{aae176b15837266834493c7397512929}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Job market signaling}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{87}
+      \field{year}{1973}
+      \field{dateera}{ce}
+      \field{pages}{355\bibrangedash 374}
+      \range{pages}{20}
+      \keyw{spence1973job}
+    \endentry
+    \entry{tirole1986hierarchies}{article}{}
+      \name{author}{1}{}{%
+        {{hash=00e537376470e49a45c05eab98111caa}{%
+           family={Tirole},
+           familyi={T\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=00e537376470e49a45c05eab98111caa}{%
+           family={Tirole},
+           familyi={T\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{00e537376470e49a45c05eab98111caa}
+      \strng{fullhash}{00e537376470e49a45c05eab98111caa}
+      \strng{bibnamehash}{00e537376470e49a45c05eab98111caa}
+      \strng{authorbibnamehash}{00e537376470e49a45c05eab98111caa}
+      \strng{authornamehash}{00e537376470e49a45c05eab98111caa}
+      \strng{authorfullhash}{00e537376470e49a45c05eab98111caa}
+      \strng{nameabibnamehash}{00e537376470e49a45c05eab98111caa}
+      \strng{nameanamehash}{00e537376470e49a45c05eab98111caa}
+      \strng{nameafullhash}{00e537376470e49a45c05eab98111caa}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Law, Economics, \& Organization}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Hierarchies and bureaucracies: On the role of collusion in organizations}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{181\bibrangedash 214}
+      \range{pages}{34}
+      \keyw{tirole1986hierarchies}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

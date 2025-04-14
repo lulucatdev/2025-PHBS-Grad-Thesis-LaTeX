@@ -1,0 +1,89 @@
+% Copyright (c) 2008-2009 solvethis
+% Copyright (c) 2010-2016,2018-2019,2022 Casper Ti. Vector
+% Copyright (c) 2021 Kurapica
+% Copyright (c) 2022 iofu728
+% Overleaf version.
+
+%*********************************************************************
+% iofu728-pkuthss: 北京大学研究生学位论文模板
+% 2022/07/16 v1.1.0
+%
+% 重要提示：
+%   1. 当前overleaf版符合2022研究生学位论文要求，可通过图书馆审核
+%   2. 当前版本基于pkuthss v1.9.2
+%   3. 请使用UTF-8编码，XeLaTeX方式编译
+%   4. 请仔细阅读用户文档
+%   5. 修改、使用、发布本文档类请务必遵循LaTeX Project Public License和知识共享4.0
+%   6. 如有疑问github/iofu728/pkuthss上提问或联系作者@iofu728
+%*********************************************************************
+
+\documentclass[fontset=fandol,ugly,language=chinese]{pkuthss}
+  % 学位论文模式  ugly    (默认打开，请保留)
+  % 盲审模式     blind   (默认关闭)
+  % 语言        language (默认chinese | english)
+  % 字体库       fontset
+  %   auto | windows | windows@overleaf | mac | fandol | ubuntu | none
+  % windows*, mac为商业字体，如需使用请遵循相应版权协议(默认下overleaf中不可用)
+  % fandol与windows效果相近，但字符库偏少，推荐使用(默认);
+  % ubuntu字体效果偏差较大; 设为none时需自行配置字体集;
+
+\usepackage[backend=biber,style=gb7714-2015ay]{biblatex}
+  % 参考文献遵循 GB/T 7714-2015 标准，使用 biblatex-gb7714-2015 宏包。
+  % 此处使用顺序编码制，如使用著者-出版年制则更改为 gb7714-2015ay。
+
+% 示例文档用包和设定，该段均可移除.
+\usepackage{enumitem,fancyvrb}
+\usepackage{booktabs,multirow,longtable,makecell} % 表格相关
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}{frame = single, tabsize = 4, fontsize=\footnotesize}
+\renewcommand{\v}[1]{\boldsymbol{#1}}
+\newcommand\pkg[1]{\textsf{#1}}
+
+% 参考文献边距字体
+\setlength{\bibitemsep}{3bp}
+\renewcommand*{\bibfont}{\zihao{5}\linespread{1.27}\selectfont}
+
+% Settings 如下设置以中文版为主，英文版为辅
+\input{configs.tex}
+
+% Miscs
+\input{miscs.tex}
+
+\addbibresource{ref.bib}
+
+
+\begin{document}
+    \frontmatter
+    \pagestyle{empty}
+    % \maketitle
+    % \cleardoublepage
+    % 需替换门户版权声明pdf
+    % \include{chap/copy}
+
+    \cleardoublepage
+    \pagestyle{plain}
+    \setcounter{page}{0}
+    \pagenumbering{Roman}
+    \include{chap/中文摘要}
+    \addcontentsline{toc}{chapter}{目录}
+    \tableofcontents
+
+    \mainmatter
+    \include{chap/chap1}
+    \include{chap/chap2}
+    \include{chap/chap3}
+    \include{chap/chap4}
+    \include{chap/chap5}
+    \include{chap/chap6}
+    
+    \appendix
+    \printbibliography[heading = bibintoc]
+
+    \backmatter
+    % 致谢
+    \include{chap/致谢}
+    % 需替换门户原创页pdf/扫描pdf
+    \origin
+
+\end{document}
+
+% vim:ts=4:sw=4
