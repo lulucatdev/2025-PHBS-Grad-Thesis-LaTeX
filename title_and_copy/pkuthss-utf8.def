@@ -40,7 +40,7 @@
 \def\label@emajor{Major: }
 \def\label@direction{研究方向：}
 \def\label@edirection{Research Division: }
-\def\label@cmentor{导\hphantom{汉字}师：}
+\def\label@cmentor{导师姓名：}
 \def\label@ementor{Directed by: }
 \def\label@ckeywords{关键词：}
 \def\label@ekeywords{KEY WORDS:\ }
